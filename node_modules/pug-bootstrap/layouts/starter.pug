@@ -1,0 +1,18 @@
+extends ../_bootstrap
+append styles
+	// Custom styles for this template
+	link(href='../css/starter-template.css', rel='stylesheet')
+block body
+	+navbar-fixed("Project name","navbar","inverse")
+		+nav_item("#","active") Home
+		+nav_item("#") About
+		+nav_item("#") Contact
+	.container
+		.starter-template
+			h1 Bootstrap starter template
+			p.lead
+				| Use this document as a way to quickly start any new project.
+				br
+				|  All you get is this text and a mostly barebones HTML document.
+	
+

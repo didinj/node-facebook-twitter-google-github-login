@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2= title
+
+        // sign in form
+        div.form-group
+          a.btn.btn-primary(href='/auth/facebook') Facebook
+        div.form-group
+          a.btn.btn-info(href='/auth/twitter') Twitter
+        div.form-group
+          a.btn.btn-danger(href='/auth/google') Google
+        div.form-group
+          a.btn.black-back(href='/auth/github') Github

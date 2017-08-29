@@ -1,0 +1,109 @@
+//- toggle
+mixin toggle(type,text)
+	button.btn(class="btn-" + type,type="button",data-toggle="button",aria-pressed="false",autocomplete="off")
+		= text
+
+//- toggle-primary
+mixin toggle-primary(text)
+	+toggle("primary",text)
+
+//- toggle-default
+mixin toggle-default(text)
+	+toggle("default",text)
+
+
+//- toggle-info
+mixin toggle-info(text)
+	+toggle("info",text)
+
+
+//- toggle-success
+mixin toggle-success(text)
+	+toggle("success",text)
+
+
+//- toggle-warning
+mixin toggle-warning(text)
+	+toggle("warning",text)
+
+
+//- toggle-danger
+mixin toggle-danger(text)
+	+toggle("danger",text)
+
+//- checkbox toggle group
+mixin checkbox-toggle(type,items,active)
+	.btn-group(data-toggle="buttons")
+		each item,index in items
+			if index === active 
+				label.btn.active(class="btn-" + type)
+					input(type="checkbox",autocomplete="off",checked) 
+					|  #{item.caption}
+			else
+				label.btn(class="btn-" + type)
+					input(type="checkbox",autocomplete="off") 
+					|  #{item.caption}
+
+//- checkbox-toggle-primary
+mixin checkbox-toggle-primary(items,active)
+	+checkbox-toggle("primary",items,active)
+
+//- checkbox-toggle-info
+mixin checkbox-toggle-info(items,active)
+	+checkbox-toggle("info",items,active)
+	
+//- checkbox-toggle-success
+mixin checkbox-toggle-success(items,active)
+	+checkbox-toggle("success",items,active)
+	
+//- checkbox-toggle-warning
+mixin checkbox-toggle-warning(items,active)
+	+checkbox-toggle("warning",items,active)
+	
+//- checkbox-toggle-danger
+mixin checkbox-toggle-danger(items,active)
+	+checkbox-toggle("danger",items,active)
+	
+//- checkbox-toggle-default
+mixin checkbox-toggle-default(items,active)
+	+checkbox-toggle("default",items,active)
+	
+
+//- radio toggle group
+mixin radio-toggle(type,name,items,active)
+	.btn-group(data-toggle="buttons")
+		each item,index in items
+			if(index === active)
+				label.btn.active(class="btn-" + type)
+					input(type="radio",name=name,autocomplete="off",checked) 
+					|  #{item.caption}
+			else
+				label.btn(class="btn-" + type)
+					input(type="radio",name=name,autocomplete="off") 
+					|  #{item.caption}
+
+//- radio-toggle-primary
+mixin radio-toggle-primary(name,items,active)
+	+radio-toggle("primary",name,items,active)
+
+//- radio-toggle-info
+mixin radio-toggle-info(name,items,active)
+	+radio-toggle("info",name,items,active)
+	
+//- radio-toggle-success
+mixin radio-toggle-success(name,items,active)
+	+radio-toggle("success",name,items,active)
+	
+//- radio-toggle-warning
+mixin radio-toggle-warning(name,items,active)
+	+radio-toggle("warning",name,items,active)
+	
+//- radio-toggle-danger
+mixin radio-toggle-danger(name,items,active)
+	+radio-toggle("danger",name,items,active)
+	
+//- radio-toggle-default
+mixin radio-toggle-default(name,items,active)
+	+radio-toggle("default",name,items,active)
+	
+
