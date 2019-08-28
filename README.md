@@ -2,7 +2,7 @@
 
 This source code is part of [Node Express Passport Facebook Twitter Google GitHub Login](https://www.djamware.com/post/59a6257180aca768e4d2b132/node-express-passport-facebook-twitter-google-github-login) tutorial.
 
-If you think this source code is useful, it will be great if you just give it star or just buy me a cup of cofee [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q5WK24UVWUGBN)
+A comprehensive tutorial of Node, Express and Passport Facebook, Twitter, Google, and Github login or authentication. This tutorial shows you how to create multiple social media (Facebook, Twitter, Google and GitHub) authentication (login) using Node, Express, Mongoose and `Passport.js`. This authentication is using OAuth provider which has the different name and authentication keys between Facebook, Twitter, Google and GitHub.
 
 Steps to run locally:
 
